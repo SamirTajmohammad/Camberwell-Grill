@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="description" content="This is the description">
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/backstretch.js"></script>
+    <script src="https://checkout.stripe.com/checkout.js" defer></script>
+    <script src="/js/store.js" defer></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
+    <script>
+        // Your web app's Firebase configuration
+        var config = {
+            apiKey: "AIzaSyCmwgd_tTOO6n7qXNsUKTkgXHrEKNlfyfw",
+            authDomain: "london-bridge-cafe.firebaseapp.com",
+            databaseURL: "https://london-bridge-cafe.firebaseio.com",
+            projectId: "london-bridge-cafe",
+            storageBucket: "london-bridge-cafe.appspot.com",
+            messagingSenderId: "87643963255",
+            appId: "1:87643963255:web:6dc1f9ec4eda3839762b72",
+            measurementId: "G-HP1D5V00GB"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <div id="container" class="container page_index">
+        <div class="container_wrapper">
+            <header class="header">
+                <div class="wrapper clearfix">
+                    <h1 class="logo_layout">
+                        <a href="/" title="Bridge Cafe">
+                            <img src="Images/Cofee.png" alt="London Bridge Cafe logo">
+                        </a>
+                    </h1>
+                    <div class="user_login" id="user_login">
+                        <script src="/js/account.js"></script>
+
+
+                    </div>
+                </div>
+
+                <%- body %>
+                <%- include('../partials/footer.ejs') %>
+        </div>
+    </div>
+
+    <script>
+        $.backstretch("Images/home-bg.jpg");
+    </script>
+    <!-- Login is to be loaded before Address so then function in Login directs user to another function in Address -->
+   
+   
+    <script src="/js/login.js"></script>
+    <script src="/js/deliveryAddress.js"></script>
+    <script src="/js/logout.js"></script>
+    <script src="/js/scroll.js"></script>
+
+
+
+</body>
+
+</html>

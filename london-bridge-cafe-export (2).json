@@ -1,0 +1,66 @@
+{
+  "Kebab" : [ {
+    "id" : 1,
+    "name" : "Lamb",
+    "size" : {
+      "Large" : 700,
+      "Small" : 550
+    }
+  }, {
+    "id" : 6,
+    "name" : "Chicken shawarma",
+    "size" : {
+      "Large" : 700,
+      "Small" : 550
+    }
+  }, {
+    "id" : 3,
+    "name" : "lamb meat & chips",
+    "size" : {
+      "Large" : 800,
+      "Small" : 650
+    }
+  }, {
+    "id" : 4,
+    "name" : "Chicken meat & chips",
+    "size" : {
+      "Large" : 800,
+      "Small" : 650
+    }
+  }, {
+    "id" : 5,
+    "name" : "Mixed meat & chips",
+    "size" : {
+      "Large" : 850,
+      "Small" : 650
+    }
+  }, {
+    "id" : 6,
+    "name" : "Lamb shish",
+    "size" : {
+      "Large" : 950,
+      "Small" : 700
+    }
+  }, {
+    "id" : 7,
+    "name" : "Chicken shish",
+    "size" : {
+      "Large" : 900,
+      "Small" : 700
+    }
+  }, {
+    "id" : 8,
+    "name" : "Kofte",
+    "size" : {
+      "Large" : 800,
+      "Small" : 600
+    }
+  }, {
+    "id" : 9,
+    "name" : "Mixed shish",
+    "size" : {
+      "Large" : 950,
+      "Small" : 750
+    }
+  } ]
+}
