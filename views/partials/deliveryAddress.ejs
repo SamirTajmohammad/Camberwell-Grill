@@ -1,0 +1,81 @@
+<div class="modal" id="modal">
+  <!-- header -->
+  <div class="modal-header">
+    <div class="title">Delivery form</div>
+    <button data-close-button class="close-button">&times;</button>
+  </div>
+  <!-- end of header -->
+  <!-- body -->
+  <div class="modal-body">
+    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+    <input
+      type="text"
+      id="fname"
+      name="firstname"
+      placeholder="Name of person who will collect order"
+    />
+    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+    <input
+      type="text"
+      id="email"
+      name="email"
+      placeholder="We will email you order receipt"
+    />
+    <label for="phone"><i class="fa fa-phone"></i> phone</label>
+    <input
+      type="text"
+      id="phone"
+      name="phone"
+      placeholder="We will text you when ready"
+    />
+    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+    <input
+      type="text"
+      id="adr"
+      name="address"
+      placeholder="Delivery driver to find your location"
+    />
+    <div class="modal-row">
+      <label for="town">Town</label>
+      <input
+        type="text"
+        id="town"
+        name="town"
+        placeholder="Elephant and castle"
+      />
+      <div class="col-50">
+        <label for="hnum">Door Num.</label>
+        <input type="text" id="hnum" name="hnum" placeholder="39" />
+      </div>
+      <div class="col-50">
+        <label for="postcode">Postcode</label>
+        <input
+          type="text"
+          id="postcode"
+          name="postcode"
+          placeholder="SE1 ???"
+        />
+      </div>
+      <label for="note">Customer note</label>
+      <br />
+      <textarea
+        style="resize: none"
+        rows="4"
+        cols="50"
+        name="comment"
+        id="comment"
+        placeholder="Enter your comment here for anything in particular we must know"
+        form="usrform"
+      ></textarea>
+    </div>
+    <!-- end of body -->
+  </div>
+  <!-- footer -->
+  <div class="modal-footer">
+    <button>Cancel</button>
+    <button class="btn-purchase btn-purchase-checkout">
+      Checkout as Guest
+    </button>
+  </div>
+  <!-- end of footer -->
+</div>

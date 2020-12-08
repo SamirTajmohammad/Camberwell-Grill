@@ -1,42 +1,470 @@
 {
-    "MAINCOURSE": [
-        {
-            "id": 1,
-            "name": "Food 1",
-            "price": 1299,
-            "imgName": "Album 1.png"
-        },
-        {
-            "id": 2,
-            "name": "Food 2",
-            "price": 1499,
-            "imgName": "Album 2.png"
-        },
-        {
-            "id": 3,
-            "name": "Food 3",
-            "price": 999,
-            "imgName": "Album 3.png"
-        },
-        {
-            "id": 4,
-            "name": "Food 4",
-            "price": 1999,
-            "imgName": "Album 4.png"
-        }
-    ],
-    "KEBABS": [
-        {
-            "id": 1,
-            "name": "Lamb doner",
-            "price": 1999,
-            "imgName": "Shirt.png"
-        },
-        {
-            "id": 6,
-            "name": "Chicken",
-            "price": 699,
-            "imgName": "Cofee.png"
-        }
-    ]
+  "Burgers": [
+    {
+      "id": 30,
+      "name": "Quarter pounder",
+      "price": 390
+    },
+    {
+      "id": 31,
+      "name": "Half pounder",
+      "price": 540
+    },
+    {
+      "id": 32,
+      "name": "Chicken fillet burger",
+      "price": 350
+    },
+    {
+      "id": 33,
+      "name": "Veggie burger",
+      "price": 320
+    },
+    {
+      "id": 34,
+      "name": "Grilled chicken burger",
+      "price": 400
+    }
+  ],
+  "ChickenandWings": [
+    {
+      "id": 35,
+      "name": "1pc chicken",
+      "price": 150
+    },
+    {
+      "id": 36,
+      "name": "2pc chicken",
+      "price": 270
+    },
+    {
+      "id": 37,
+      "name": "3pc chicken",
+      "price": 360
+    },
+    {
+      "id": 38,
+      "name": "4pc chicken",
+      "price": 450
+    },
+    {
+      "id": 39,
+      "name": "8pc chicken",
+      "price": 820
+    },
+    {
+      "id": 40,
+      "name": "12pc chicken",
+      "price": 1200
+    },
+    {
+      "id": 41,
+      "name": "3 Hotwings",
+      "price": 160
+    },
+    {
+      "id": 42,
+      "name": "4 Hotwings",
+      "price": 200
+    },
+    {
+      "id": 43,
+      "name": "6 Hotwings",
+      "price": 300
+    },
+    {
+      "id": 44,
+      "name": "8 Hotwings",
+      "price": 390
+    },
+    {
+      "id": 45,
+      "name": "10 Hotwings",
+      "price": 500
+    },
+    {
+      "id": 46,
+      "name": "20 Hotwings",
+      "price": 950
+    }
+  ],
+  "CombinationKebabs": [
+    {
+      "Description": "Cubes of marinated lamb with chicken shawarma and salad",
+      "price": 900,
+      "id": 10,
+      "name": "Lamb shish & Chicken shawarma"
+    },
+    {
+      "Description": "Cubes of marinated chicken with a skewer of kofte and salad",
+      "price": 850,
+      "id": 11,
+      "name": "Chicken shish & Kofte"
+    },
+    {
+      "Description": "Cubes of marinated chicken with chicken shawarma and salad",
+      "price": 850,
+      "id": 12,
+      "name": "Chicken shish & Chicken shawarma"
+    },
+    {
+      "Description": "Chicken shawarma with a skewer of kofte and salad",
+      "price": 800,
+      "id": 13,
+      "name": "Chicken shawarma & kofte"
+    },
+    {
+      "Description": "Chicken shawarma with Lamb doner and salad",
+      "price": 800,
+      "id": 14,
+      "name": "Mixed doner"
+    },
+    {
+      "Description": "Cubes of marinated chicken with Lamb doner and salad",
+      "price": 890,
+      "id": 15,
+      "name": "Chicken shish & Lamb doner"
+    },
+    {
+      "Description": "Cubes of marinated lamb and chicken and salad",
+      "price": 950,
+      "id": 16,
+      "name": "Lamb shish & Chicken shish"
+    }
+  ],
+  "Drink": [
+    {
+      "Description": "330ml can",
+      "id": 63,
+      "name": "Coke",
+      "price": 120
+    },
+    {
+      "Description": "330ml can",
+      "id": 64,
+      "name": "Diet Coke",
+      "price": 120
+    },
+    {
+      "Description": "330ml can",
+      "id": 65,
+      "name": "Pepsi",
+      "price ": 120
+    },
+    {
+      "Description": "330ml can",
+      "id": 66,
+      "name": "Diet Pepsi",
+      "price": 120
+    },
+    {
+      "Description": "330ml can",
+      "id": 67,
+      "name": "7up",
+      "price": 120
+    },
+    {
+      "Description": "330ml can",
+      "id": 68,
+      "name": "Mirinda Orange",
+      "price": 120
+    },
+    {
+      "Description": "330ml can",
+      "id": 69,
+      "name": "Mirinda Strawberry",
+      "price": 120
+    },
+    {
+      "Description": "none",
+      "id": 70,
+      "name": "Ayran",
+      "price": "080"
+    },
+    {
+      "Description": "500ml",
+      "id": 71,
+      "name": "Water",
+      "price": "080"
+    },
+    {
+      "Description": "500ml bottle",
+      "id": 72,
+      "name": "Coke",
+      "price": 200
+    },
+    {
+      "Description": "500ml bottle",
+      "id": 73,
+      "name": "Diet Coke",
+      "price": 200
+    }
+  ],
+  "KMeal": [
+    {
+      "name": "Lamb wrap",
+      "size": {
+        "Large": 690,
+        "Small": 500
+      }
+    },
+    {
+      "name": "Chicken shawarma wrap",
+      "size": {
+        "Large": 690,
+        "Small": 500
+      }
+    },
+    {
+      "name": "Mixed wrap",
+      "size": {
+        "Large": 750,
+        "Small": 550
+      }
+    },
+    {
+      "name": "Lamb meat & chips",
+      "size": {
+        "Large": 800,
+        "Small": 650
+      }
+    },
+    {
+      "name": "Chicken meat & chips",
+      "size": {
+        "Large": 850,
+        "Small": 650
+      }
+    },
+    {
+      "name": "Mixed meat & chips",
+      "size": {
+        "Large": 850,
+        "Small": 650
+      }
+    },
+    {
+      "name": "Chicken shish wrap",
+      "size": {
+        "Large": 900,
+        "Small": 700
+      }
+    },
+    {
+      "name": "Felalfel wrap",
+      "size": {
+        "Large": 600,
+        "Small": 450
+      }
+    }
+  ],
+  "Kebab": [
+    {
+      "id": 1,
+      "name": "Lamb",
+      "size": {
+        "Large": 700,
+        "Small": 550
+      }
+    },
+    {
+      "id": 2,
+      "name": "Chicken shawarma",
+      "size": {
+        "Large": 700,
+        "Small": 550
+      }
+    },
+    {
+      "id": 3,
+      "name": "lamb meat & chips",
+      "size": {
+        "Large": 800,
+        "Small": 650
+      }
+    },
+    {
+      "id": 4,
+      "name": "Chicken meat & chips",
+      "size": {
+        "Large": 800,
+        "Small": 650
+      }
+    },
+    {
+      "id": 5,
+      "name": "Mixed meat & chips",
+      "size": {
+        "Large": 850,
+        "Small": 650
+      }
+    },
+    {
+      "id": 6,
+      "name": "Lamb shish",
+      "size": {
+        "Large": 950,
+        "Small": 700
+      }
+    },
+    {
+      "id": 7,
+      "name": "Chicken shish",
+      "size": {
+        "Large": 900,
+        "Small": 700
+      }
+    },
+    {
+      "id": 8,
+      "name": "Kofte",
+      "size": {
+        "Large": 800,
+        "Small": 600
+      }
+    },
+    {
+      "id": 9,
+      "name": "Mixed shish",
+      "size": {
+        "Large": 950,
+        "Small": 750
+      }
+    }
+  ],
+  "MainCourses": [
+    {
+      "Description": "Marinated half boneless chicken served with rice or chips and salad.",
+      "price": 750,
+      "id": 17,
+      "name": "Half Boneless Chicken\""
+    },
+    {
+      "Description": "2 skewers of marinated chicken cubes served with rice or chips and salad.",
+      "price": 1100,
+      "id": 18,
+      "name": "Chicken shish"
+    },
+    {
+      "Description": "2 skewer of marinated lamb cubes served with rice or chips and salad",
+      "price": "1150",
+      "id": 19,
+      "name": "Lamb shish  "
+    },
+    {
+      "Description": "1 skewer each of marinated chicken and lamb cubes with 1 skewer of minced lamb served with rice or chips and salad.",
+      "price": "1300",
+      "id": 20,
+      "name": "Mix grill"
+    },
+    {
+      "Description": "1 skewer each of chicken and lamb cubes served with rice or chips and salad",
+      "price": "1150",
+      "id": 21,
+      "name": "Chicken & Lamb shish"
+    },
+    {
+      "Description": "1 skewer each of marinated chicken cubes and minced lamb served with rice or chips and salad",
+      "price": "1000",
+      "id": 22,
+      "name": "Chicken shish & Kofte"
+    },
+    {
+      "Description": "2 skewers of minced lamb served with rice or chips and salad.",
+      "price": "900",
+      "id": 23,
+      "name": "Kofte"
+    },
+    {
+      "Description": "Chicken shawarma served with rice or chips and salad",
+      "price": "800",
+      "id": 24,
+      "name": "Chicken shawarma"
+    }
+  ],
+  "SideOrders": [
+    {
+      "id": 47,
+      "name": "6 Nuggets",
+      "price": 320
+    },
+    {
+      "id": 48,
+      "name": "8 Nuggets",
+      "price": 400
+    },
+    {
+      "id": 49,
+      "name": "10 Nuggets",
+      "price": 500
+    },
+    {
+      "id": 50,
+      "name": "20 Nuggets",
+      "price": 950
+    },
+    {
+      "id": 51,
+      "name": "Felafel with chips and houmous",
+      "price": 550
+    },
+    {
+      "Size": {
+        "Large": 300,
+        "Regular": 200
+      },
+      "id": 52,
+      "name": "Chips"
+    },
+    {
+      "id": 53,
+      "name": "Cheesy chips",
+      "price": 400
+    },
+    {
+      "id": 54,
+      "name": "Onion rings",
+      "price": 320
+    },
+    {
+      "id": 55,
+      "name": "Onion rings with chips",
+      "price": 480
+    },
+    {
+      "id": 56,
+      "name": "Chips with peta bread",
+      "price": 350
+    },
+    {
+      "id": 57,
+      "name": "Houmous with bread",
+      "price": 300
+    },
+    {
+      "id": 58,
+      "name": "Houmous",
+      "price": 150
+    },
+    {
+      "id": 59,
+      "name": "Coleslaw",
+      "price": 150
+    },
+    {
+      "id": 60,
+      "name": "Beans",
+      "price": 150
+    },
+    {
+      "id": 61,
+      "name": "Salad",
+      "price": 250
+    },
+    {
+      "id": 62,
+      "name": "Pot of sauce",
+      "price": "030"
+    }
+  ]
 }

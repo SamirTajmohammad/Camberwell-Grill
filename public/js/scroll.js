@@ -13,26 +13,25 @@ let cur = [];
 // });
 // Only not doing it here to keep this Pen dependency-free.
 
-window.addEventListener("scroll", event => {
-    let fromTop = window.scrollY;
+window.addEventListener("scroll", (event) => {
+  let fromTop = window.scrollY;
 
-    mainNavLinks.forEach(link => {
-        let section = document.querySelector(link.hash);
+  mainNavLinks.forEach((link) => {
+    let section = document.querySelector(link.hash);
 
-        if (
-            section.offsetTop <= fromTop &&
-            section.offsetTop + section.offsetHeight > fromTop
-        ) {
-            link.classList.add("current");
-        } else {
-            link.classList.remove("current");
-        }
-    });
+    if (
+      section.offsetTop <= fromTop &&
+      section.offsetTop + section.offsetHeight > fromTop
+    ) {
+      link.classList.add("current");
+    } else {
+      link.classList.remove("current");
+    }
+  });
 });
 function stickyCategory() {
-    window.addEventListener('scroll', () => {
-        const scrolled = window.scrollY;
-        console.log(Math.ceil(scrolled));
-        
-    });
+  window.addEventListener("scroll", () => {
+    const scrolled = window.scrollY;
+    // console.log(Math.ceil(scrolled));
+  });
 }

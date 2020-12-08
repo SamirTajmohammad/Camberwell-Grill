@@ -1,77 +1,54 @@
 <script>
-    var stripePublicKey = '<%= stripePublicKey %>'
+  var stripePublicKey = "<%= stripePublicKey %>";
 </script>
-<script src="/js/extractDBItems.js"></script>
-
-
 <div class="content clearfix">
-    <div class="wrapper">
-        <!-- Categories -->
-        <div class="left_side">
-            <div class="categories">
-                <div class="col-3 col-s-3 menu">
-
-                    <ul>
-                        <li>Burgers</li>
-                        <li>Chicken and Wings</li>
-                        <li>Combination kebabs</li>
-                        <li>Drink</li>
-                        <li>K-Meal</li>
-                        <li>Kebab</li>
-                        <li>Main courses & Grilled dishes</li>
-                        <li>Side orders</li>
-                    </ul>
-                </div>
-            </div>
+  <div class="wrapper">
+    <!-- Categories -->
+    <div class="left_side">
+      <div class="categories">
+        <div id="navbar" class="col-3 col-s-3 menu">
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
-
-        <!-- Menu -->
-        <div class="main_side">
-            <h2 class="section-header">Main Courses</h2>
-            <div class="shop-items">
-                <% items.MAINCOURSE.forEach(function(item){ %>
-                <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= item.name %></span>
-                    <img class="shop-item-image" src="Images/<%= item.imgName %>">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">£<%= item.price / 100 %></span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <% }) %>
-            </div>
-            <h2 class="section-header">Kebab</h2>
-            <div class="shop-items">
-                <% items.KEBABS.forEach(function(item){ %>
-                <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= item.name %></span>
-                    <img class="shop-item-image" src="Images/<%= item.imgName %>">
-                    <div class="shop-item-details">
-                        <span class="shop-item-price">£<%= item.price / 100 %></span>
-                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-                    </div>
-                </div>
-                <% }) %>
-            </div>
-        </div>
-        <!-- cart section -->
-        <div class="right_side">
-            <h2 class="section-header">CART</h2>
-            <div class="cart-row">
-                <span class="cart-item cart-header cart-column">ITEM</span>
-                <span class="cart-price cart-header cart-column">PRICE</span>
-                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
-            </div>
-            <div class="cart-items">
-            </div>
-            <div class="cart-total">
-                <strong class="cart-total-title">Total</strong>
-                <span class="cart-total-price">£0</span>
-            </div>
-            <button class="btn btn-primary btn-payment" type="button">Proceed To Payment</button>
-
-            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
-            <!-- end of cart section -->
-        </div>
+      </div>
     </div>
+
+    <!-- Menu -->
+    <div class="main_side" id="myDiv"></div>
+
+    <!-- menu here extracted from db -->
+
+    <!-- cart section -->
+    <div id="cart" class="right_side">
+      <h2 class="section-header">CART</h2>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">£0</span>
+      </div>
+      <button data-modal-target="#modal" class="btn btn-purchase-cart">
+        Proceed to delivery
+      </button>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      />
+      <%- include('../partials/deliveryAddress.ejs') %>
+      <div id="overlay"></div>
+      <!-- end of cart section -->
+    </div>
+  </div>
 </div>
