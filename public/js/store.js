@@ -81,9 +81,11 @@ var stripeHandler = StripeCheckout.configure({
 
 function purchaseClicked() {
   // first make sure the delivery form has been submitted correctly.
+  // validateForm()
 
   var priceElement = document.getElementsByClassName("cart-total-price")[0];
   var price = parseFloat(priceElement.innerText.replace("£", "")) * 100;
+
   stripeHandler.open({
     amount: price,
   });
@@ -138,6 +140,7 @@ function addItemToCart(title, price, id) {
             <input class="cart-quantity-input" type="number" value="1">
             <button class="btn btn-danger" type="button">REMOVE</button>
         </div>`;
+  //if cart item is removed or quantity is changed
   cartRow.innerHTML = cartRowContents;
   cartItems.append(cartRow);
   cartRow
@@ -154,6 +157,7 @@ function updateCartTotal() {
   var total = 0;
   for (var i = 0; i < cartRows.length; i++) {
     var cartRow = cartRows[i];
+
     var priceElement = cartRow.getElementsByClassName("cart-price")[0];
     var quantityElement = cartRow.getElementsByClassName(
       "cart-quantity-input"
@@ -165,4 +169,6 @@ function updateCartTotal() {
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName("cart-total-price")[0].innerText =
     "£" + total;
+
+  //print receipt
 }

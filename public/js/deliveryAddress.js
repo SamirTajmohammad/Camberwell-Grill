@@ -22,9 +22,10 @@ function deliveryAddress() {
 }
 
 function writeToDB() {
-  // Extract all necessary data of customer
+  // check if these are not empty and are validated.
+  // if the below fields are not null
+  // address form user inputs
   var xname = document.getElementById("fname").value;
-
   var xaddressline1 = document.getElementById("adr").value;
   var xtown = document.getElementById("town").value;
   var xpostcode = document.getElementById("postcode").value;
@@ -33,8 +34,11 @@ function writeToDB() {
   var xemail = document.getElementById("email").value;
   var xcomment = document.getElementById("comment").value;
 
-  // check if these are not empty and are validated.
-  // if the below fields are not null
+  // basket details
+  var priceElement = document.getElementsByClassName("cart-total-price")[0];
+  var price = parseFloat(priceElement.innerText.replace("£", "")) * 100;
+  var cartItems = document.getElementsByClassName("cart-items")[0].innerText;
+  console.log("total price: " + priceElement.innerText);
 
   const customerData = {
     xname,
@@ -45,6 +49,7 @@ function writeToDB() {
     xphone,
     xemail,
     xcomment,
+    cartItems,
   };
 
   console.log(customerData);

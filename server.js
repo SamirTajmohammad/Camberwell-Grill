@@ -91,6 +91,7 @@ app.post("/customerData", (req, res) => {
     phone: data.xphone,
     email: data.xemail,
     comment: data.xcomment,
+    cart: data.cartItems,
   });
 
   //   reference index to know which email belongs to which id.
