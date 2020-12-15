@@ -8,24 +8,101 @@
       <div class="categories">
         <div id="navbar" class="col-3 col-s-3 menu">
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Burgers</li>
+            <li>Chicken and Wing</li>
+            <li>Combination Kebabs</li>
+            <li>Kebab</li>
+            <li>Main Courses</li>
+            <li>Side Orders</li>
+            <li>Drink</li>
             <li></li>
           </ul>
         </div>
       </div>
     </div>
-
     <!-- Menu -->
-    <div class="main_side" id="myDiv"></div>
-
-    <!-- menu here extracted from db -->
-
+    <div class="main_side" id="myDiv">
+      <section class="container content-section">
+        <h2 class="section-header">Burgers</h2>
+        <div class="shop-items">
+          <% items.Burgers.forEach(function(item){ %>
+          <div class="shop-item" data-item-id="<%= item.id %>">
+            <span class="shop-item-title"><%= item.name %></span>
+            <div class="shop-item-details">
+              <span class="shop-item-price">£<%= item.price / 100 %></span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">Chicken and Wings</h2>
+        <div class="shop-items">
+          <% items.ChickenandWings.forEach(function(item){ %>
+          <div class="shop-item" data-item-id="<%= item.id %>">
+            <span class="shop-item-title"><%= item.name %></span>
+            <div class="shop-item-details">
+              <span class="shop-item-price">£<%= item.price / 100 %></span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">Combination Kebabs</h2>
+        <div class="shop-items">
+          <% items.CombinationKebabs.forEach(function(item){ %>
+          <div class="shop-item" data-item-id="<%= item.id %>">
+            <span class="shop-item-title"><%= item.name %></span>
+            <div class="shop-item-details">
+              <span class="shop-item-price">£<%= item.price / 100 %></span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">Kebab</h2>
+        <div class="shop-items">
+          <% items.Kebab.forEach(function(item){ %>
+          <div class="shop-item" data-item-id="<%= item.id %>">
+            <span class="shop-item-title"><%= item.name %></span>
+            <div class="shop-item-details">
+              <span class="shop-item-price">£<%= item.price / 100 %></span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+      <section class="container content-section">
+        <h2 class="section-header">Drink</h2>
+        <div class="shop-items">
+          <% items.Drink.forEach(function(item){ %>
+          <div class="shop-item" data-item-id="<%= item.id %>">
+            <span class="shop-item-title"><%= item.name %></span>
+            <div class="shop-item-details">
+              <span class="shop-item-price">£<%= item.price / 100 %></span>
+              <button class="btn btn-primary shop-item-button" type="button">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+          <% }) %>
+        </div>
+      </section>
+    </div>
     <!-- cart section -->
     <div id="cart" class="right_side">
       <h2 class="section-header">CART</h2>

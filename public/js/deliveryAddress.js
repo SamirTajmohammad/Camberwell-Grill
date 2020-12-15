@@ -7,7 +7,7 @@ if (document.readyState == "loading") {
 }
 
 function begin() {
-  readItemsCategories();
+  // readItemsCategories();
   document
     .getElementsByClassName("btn-purchase")[0]
     .addEventListener("click", deliveryAddress);
@@ -60,6 +60,8 @@ function writeToDB() {
     body: JSON.stringify(customerData),
   });
 }
+
+function categories() {}
 
 // read from database
 function readItemsCategories() {
@@ -117,10 +119,16 @@ function readItemsCategories() {
             // take price / 100 and add £
             var pound = "£";
             var fbPrice = snapshot3.val();
+            console.log("fbprice: " + fbPrice);
             var integer = parseInt(fbPrice, 10);
+            console.log("integer: " + integer);
             var priceEditted = integer / 100;
+            console.log("priceEditted: " + priceEditted);
             var actualPrice = priceEditted.toString();
+            console.log("actualPrice: " + actualPrice);
             var price = pound + actualPrice + "0";
+            console.log("price: " + price);
+
             var t2 = document.createTextNode(price);
             s2.appendChild(t2);
             div3.appendChild(s2);
